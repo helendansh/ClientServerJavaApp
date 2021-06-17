@@ -57,7 +57,7 @@ public class Server {
                                         .put("Result", "success")
                                         .put("Timestamp", LocalDateTime.now().format(formatter))));
 
-                        outWr.write(response + "\n");
+                        outWr.write("Сообщение доставлено. " + response + "\n");
                         outWr.flush();
                     }
                 } finally {
